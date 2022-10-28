@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.Dao.ChartDao">
+
+	<insert id="setMarketCode" parameterType="java.util.List">
+		 
+				TB_SIMBOR_INFO
+		    (
+		        MARKET,
+		        KOREAN_NAME,
+		        ENGLISH_NAME,
+		        MARKET_WARNING
+		    )
+		    VALUES
+		    (
+		   
+		        #{item.market}
+		        , #{item.korean_name}
+		        , #{item.english_name}
+		        , #{item.market_warning}
+		        
+		        )
+		      
+		
+	</insert>
+</mapper>
